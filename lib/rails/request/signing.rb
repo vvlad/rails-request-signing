@@ -18,9 +18,8 @@ module Rails
 
           prepend_before_filter(options) do
             break unless required
-            helper = method(signer)
 
-            signing_entity = helper.arity.zero? ? helper.call :  helper.call(request.headers["HTTP_X_SIGNATURE_ID"])
+            signing_entity = method(signer).call
 
             credentials = {}
             credentials = signing_entity.to_credentials if signing_entity.respond_to? :to_credentials
