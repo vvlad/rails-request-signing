@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rails::Request::Signing::VERSION
   spec.authors       = ["Vlad Verestiuc"]
   spec.email         = ["verestiuc.vlad@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Request signing for rails}
+  spec.description   = %q{Request signing for rails}
   spec.homepage      = ""
   spec.license       = "MIT"
 
